@@ -1,0 +1,158 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+}
+
+.container {
+
+    border: 2px solid black;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px black;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.Titulo {
+
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+
+}
+hr {
+
+    width: 100%;
+    box-shadow: 1px 1px 1px black;
+
+}
+
+.calculos {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.caixasNumeros {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.caixas {
+
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    font-size: 15px;
+
+}
+
+.botoesCalculos {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+}
+.buttonCalc {
+
+    background-color: white;
+    color: rgb(3, 2, 2);
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+
+}
+
+.buttonCalc:hover{
+    cursor: pointer;
+}
+
+.resultado {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tituloResultado {
+
+    font-size: 35px;
+
+}
+
+.resultadoNumero {
+    
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 10%;
+
+}
+
+#info {
+    
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 15px;
+
+}
+
+#info p {
+
+    font-size: 14px;
+
+}
+#info h2 {
+
+    font-size: 25px;
+
+}
+.navegacao {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.navegacao a {
+
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+
+}
+/* hover é o efeito ao passar o mouse no link */
+.navegacao a:hover {
+
+    color: #10e6e6;
+
+}
+
+.cabecalho {
+
+    background-color: #04111f;
+    padding: 15px 0;
+    /* Torna o menu fixo no topo ao rolar a página */
+    position: sticky;
+    top: 0;
+
+}

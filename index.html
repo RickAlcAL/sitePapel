@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images\calculadoraIcon.png">
+    <link rel="stylesheet" href="syles.css">
+    <script src="../sitePapel/calculos.js"></script>
+    <title> Cálculos dificeis </title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <nav>
+            <ul class="navegacao">
+                <li><a href="index.html">Calculadora</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <!-- Criando um container -->
+        <section id="Calculadora">
+            <section class="Titulo">
+                <!-- Criando uma secção de titulo especific -->
+                <h1> Calculadora de Soma
+                    <hr>
+                </h1>
+            </section>
+            <section class="calculos">
+                <!-- Criando uma secção para aonde ficará os cálculos -->
+                <div class="caixasNumeros">
+                    <!-- Formatand em CSS os elementos -->
+                    <p>Insira seu 1 número </p>
+                    <input class="caixas" id="numero1" type="number" placeholder=" Digite um numero">
+                    <p>Insira seu 2 número </p>
+                    <input class="caixas" id="numero2" type="number" placeholder=" Digite um numero">
+                    <!-- Atribuindo um método de cálculo em JavaScript -->
+                    <div class="botoesCalculos">
+                        <button onclick="calcularResultadoSoma()" class="buttonCalc">SOMA</button>
+                        <button onclick="calcularResultadoSubtracao()" class="buttonCalc">SUBTRAÇÃO</button>
+                        <button onclick="calcularResultadoDivisao()" class="buttonCalc">DIVISÃO</button>
+                        <button onclick="calcularResultadoMultiplicacao()" class="buttonCalc">MULTIPLICAÇÃO</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Criando uma secção para resultado -->
+            <section class="resultado">
+                <div class="tituloResultado">
+                    <h2> Resultado
+                        <hr>
+                    </h2>
+                </div>
+                <!-- Caixa que vai receber o resultado do método -->
+                <input class="resultadoNumero" id="resultado" type="number" readonly>
+                <hr>
+            </section>
+
+        </section>
+
+    </main>
+</body>
+
+
+</html>
